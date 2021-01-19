@@ -10,7 +10,7 @@ Then download this package:
 `git clone https:\\github.com\sayed-amir\odin-click-router.git`  
 
 There a folder for click-router package and a script to apply [ath9k patch](https://github.com/Wi5/odin-wi5/blob/master/odin-patch-driver-ath9k/ath9k-bssid-mask.patch).  
-Download Openwrt 18.0.6.9:  
+Download Openwrt 18.06.9:  
 `git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git openwrt `  
 
 
