@@ -1,0 +1,11 @@
+diff --git a/config.h.in b/config.h.in
+index 0db894a..8db35a2 100644
+--- a/config.h.in
++++ b/config.h.in
+@@ -329,4 +329,6 @@ typedef int64_t click_aliasable_int64_t CLICK_MAY_ALIAS;
+ #endif
+ typedef void *click_aliasable_void_pointer_t CLICK_MAY_ALIAS;
+ 
++#define HAVE_VA_LIST_AS_ARRAY 1
++
+ #endif /* CLICK_CONFIG_H */

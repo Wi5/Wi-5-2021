@@ -1,0 +1,18 @@
+--- a/configure
++++ b/configure
+@@ -11087,11 +11087,11 @@ return 0
+   return 0;
+ }
+ _ACEOF
+-if ac_fn_cxx_try_compile "$LINENO"; then :
++#if ac_fn_cxx_try_compile "$LINENO"; then :
+   ac_cv_cxx_aware_system=yes
+-else
+-  ac_cv_cxx_aware_system=no
+-fi
++#else
++#  ac_cv_cxx_aware_system=no
++#fi
+ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+ 
+ fi

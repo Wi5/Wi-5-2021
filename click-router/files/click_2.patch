@@ -1,0 +1,12 @@
+diff --git a/include/click/error.hh b/include/click/error.hh
+index c4aef70..86cbb1f 100644
+--- a/include/click/error.hh
++++ b/include/click/error.hh
+@@ -25,6 +25,7 @@
+ #else
+ # define ERRH_SENTINEL __attribute__((sentinel))
+ #endif
++# define HAVE_VA_LIST_AS_ARRAY 1
+ CLICK_DECLS
+ 
+ /** @class ErrorHandler

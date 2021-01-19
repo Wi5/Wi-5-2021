@@ -1,0 +1,35 @@
+diff --git a/lib/error.cc b/lib/error.cc
+index 1aa5ce9..5c401c1 100644
+--- a/lib/error.cc
++++ b/lib/error.cc
+@@ -32,12 +32,21 @@
+ #if CLICK_USERLEVEL || CLICK_TOOL || CLICK_MINIOS
+ # include <unistd.h>
+ #endif
++
++#ifdef HAVE_VA_LIST_AS_ARRAY
++#define MAKE_POINTER_FROM_VA_LIST_ARG(arg) ((va_list *)(arg))
++#else
++#define MAKE_POINTER_FROM_VA_LIST_ARG(arg) (&(arg))
++#endif
++
+ CLICK_DECLS
+ 
+ /** @file error.hh
+  * @brief Flexible error handling classes.
+  */
+ 
++
++
+ struct ErrorHandler::Conversion {
+     String name;
+     ConversionFunction hook;
+@@ -726,7 +735,7 @@ ErrorHandler::vxformat(int default_flags, const char *s, va_list val)
+ 	    s = s2 + 1;
+ 	    for (Conversion *item = error_items; item; item = item->next)
+ 		if (item->name.equals(s1, s2 - s1)) {
+-		    strstore = item->hook(flags, VA_LIST_REF(val));
++		    strstore = item->hook(flags, MAKE_POINTER_FROM_VA_LIST_ARG(VA_LIST_REF(val)));
+ 		    s1 = strstore.begin();
+ 		    s2 = strstore.end();
+ 		    goto got_result;

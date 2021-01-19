@@ -1,0 +1,12 @@
+*** if_ether.h.orig	2021-01-15 16:32:56.661656503 +1100
+--- if_ether.h	2021-01-15 16:33:47.895657589 +1100
+*************** struct ethhdr {
+*** 150,155 ****
+--- 150,156 ----
+  	unsigned char	h_source[ETH_ALEN];	/* source ether addr	*/
+  	__be16		h_proto;		/* packet type ID field	*/
+  } __attribute__((packed));
++ #define __UAPI_DEF_ETHHDR 0
+  #endif
+  
+  
