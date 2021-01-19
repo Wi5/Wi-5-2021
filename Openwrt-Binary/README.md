@@ -1,0 +1,1 @@
+Openwrt image files (firmware) can be directly uploaded to wireless device. Odin-enabled Click-router is compiled and included in these binary files. 
