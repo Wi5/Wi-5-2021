@@ -1,7 +1,7 @@
-# odin-enabled click-router for Openwrt 18.06
+# odin-enabled click-router on Openwrt 18.06
 This version of click-router can be downloaded and added as a local repository to Openwrt. The Openwrt image after cross-compile will include click-router that is modified to support Odin client<sup>1</sup>. 
 
-#To build the Openwrt 18.0.6 image:
+## To build the Openwrt 18.0.6 image:
 
 Install [Prerequisites](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem), this is the list of packages which were installed on Ubuntu 18 but there may be more requirements:
 
