@@ -10,7 +10,7 @@ Install [Prerequisites](https://openwrt.org/docs/guide-developer/build-system/in
 
 Then download this package:
 
-`git clone https:\\github.com\sayed-amir\odin-click-router.git`  
+`git clone https://github.com/sayed-amir/odin-click-router.git`  
 
 There is a folder named `click-router`  and a script to apply [`ath9k patch`](https://github.com/Wi5/odin-wi5/blob/master/odin-patch-driver-ath9k/ath9k-bssid-mask.patch).  
 
