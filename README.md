@@ -1,6 +1,8 @@
 # odin-enabled click-router for Openwrt 18.06
-This package can be downloaded and added as a local repository to Openwrt. The Openwrt image after cross-compile will include click-router that is modified to support Odin client<sup>1</sup>. 
-To build the Openwrt 18.0.6 image:
+This version of click-router can be downloaded and added as a local repository to Openwrt. The Openwrt image after cross-compile will include click-router that is modified to support Odin client<sup>1</sup>. 
+
+#To build the Openwrt 18.0.6 image:
+
 Install [Prerequisites](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem), this is the list of packages which were installed on Ubuntu 18 but there may be more requirements:
 
 ` sudo apt-get update`  
@@ -10,14 +12,14 @@ Then download this package:
 
 `git clone https:\\github.com\sayed-amir\odin-click-router.git`  
 
-There is a folder for click-router package and a script to apply [ath9k patch](https://github.com/Wi5/odin-wi5/blob/master/odin-patch-driver-ath9k/ath9k-bssid-mask.patch).  
+There is a folder named `click-router`  and a script to apply [`ath9k patch`](https://github.com/Wi5/odin-wi5/blob/master/odin-patch-driver-ath9k/ath9k-bssid-mask.patch).  
 
 Download Openwrt 18.06.9:
 
 `git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git openwrt `  
 
 
-Create local package directory and copy click-router into it:  
+Create local repository directory and copy click-router into it:  
 
 `cd openwrt/`  
 `mkdir mypackages`  
