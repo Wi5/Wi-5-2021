@@ -70,7 +70,7 @@ or if you want to have logs in a file:
 
 `make V=s 2>&1 | tee build.log | grep -i -E "^make.*(error|[12345]...Entering dir)"`  
 
-If everything goes well, the image file (`.bin`) and also the Click installation file (`.ipk`) should be found in `openwrt/bin/`. 
+If everything goes well, the image file (`.bin`) and also the Click installation file (`.ipk`) should be found in `openwrt/bin/`. `.bin` file is enough to flash router and click-router is ready after flash.
 
 
 1 - This installs click version (2020/10/26) on Openwrt 18.06.8. The image has been tested on TP-Link AR1750 (ARCHER c7 v5).
