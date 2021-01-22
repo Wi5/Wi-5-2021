@@ -30,7 +30,7 @@ Edit `feeds.conf.default` to add the local repository to the last line and save 
 
 `...`  
 `src-git routing https://git.openwrt.org/feed/routing.git;openwrt-18.06
-src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-18.06
+src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-18.06  
 src-link custom /home/ubuntu/openwrt/mypackages`  
 
 Note that the `/home/ubuntu/openwrt/mypackages` should be replaced by an absolute address of mypackages folder in your Linux.
