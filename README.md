@@ -29,9 +29,9 @@ Create local repository directory and copy click-router into it:
 Edit `feeds.conf.default` to add the local repository to the last line and save it as `feeds.conf`:  
 
 `...`  
-`src-git routing https://git.openwrt.org/feed/routing.git;openwrt-18.06
-src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-18.06  
-src-link custom /home/ubuntu/openwrt/mypackages`  
+`src-git routing https://git.openwrt.org/feed/routing.git;openwrt-18.06`  
+`src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-18.06` 
+`src-link custom /home/ubuntu/openwrt/mypackages`  
 
 Note that the `/home/ubuntu/openwrt/mypackages` should be replaced by an absolute address of mypackages folder in your Linux.
 
