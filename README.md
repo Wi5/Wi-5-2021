@@ -25,7 +25,7 @@ Create local repository directory and copy click-router into it:
 `mkdir mypackages`  
 `cp -r ../odin-click-router/click-router/  mypackages/` 
 
-Edit feeds.conf to add the local repository to the last line:  
+Edit `feeds.conf.default` to add the local repository to the last line and save it as `feeds.conf`:  
 
 `...`  
 `src-git routing https://git.openwrt.org/feed/routing.git^0e63ef9276bf41c0d4176127f9f047343b8ffe32`  
