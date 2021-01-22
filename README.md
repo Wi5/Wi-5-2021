@@ -52,7 +52,7 @@ Then configure OpenWrt make by:
 
 `make menuconfig`  
 
- Select your architecture as `Atheros AR71xxx/Ar9xxx`, Select your device model in profile submenu. Select only necessary packages since there is an image size limit depending on your wireless router storage. Particularly find `openvswitch` and `click-router` at the bottom of the list. Save the configuration as `.config`.
+ Select your architecture as `Atheros AR71xxx/Ar9xxx`, Select your device model in profile submenu. Select only necessary packages since there is an image size limit depending on your wireless router storage. Particularly find `openvswitch` and `click-router` on the network section. Save the configuration as `.config`.
 
 Check `clcik-router` selection in `.config` file:  
 
