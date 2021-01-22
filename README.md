@@ -1,6 +1,5 @@
-Create Openwrt image for Wi-5 project. Openwrt 18.06.9, Click-Router, Odin-agent
+# Create Openwrt image for Wi-5 project. {Openwrt 18.06.9, Click-Router, Odin-agent}
 
-# odin-enabled click-router on Openwrt 18.06
 This version of click-router can be downloaded and added as a local repository to Openwrt. The Openwrt image after cross-compile will include click-router that is modified to support Odin client<sup>1</sup>. 
 
 ## To build the Openwrt 18.0.6 image:
@@ -53,7 +52,7 @@ Then configure OpenWrt make by:
 
 `make menuconfig`  
 
- Select your architecture as `Atheros AR71xxx/Ar9xxx`, Select your device model in profile submenu. Select only necessary packages since there is an image size limit depending on your wireless router storage. Particularly find `click-router` at the bottom of the list. Save the configuration as `.config`.
+ Select your architecture as `Atheros AR71xxx/Ar9xxx`, Select your device model in profile submenu. Select only necessary packages since there is an image size limit depending on your wireless router storage. Particularly find `openvswitch` and `click-router` at the bottom of the list. Save the configuration as `.config`.
 
 Check `clcik-router` selection in `.config` file:  
 
