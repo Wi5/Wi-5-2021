@@ -17,7 +17,7 @@ There is a folder named `click-router`  and a script to apply [`ath9k patch`](ht
 
 Download Openwrt 18.06.9:
 
-`git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git openwrt `  
+`git clone https://github.com/openwrt/openwrt.git --branch v18.06.8 --single-branch  openwrt `  
 
 
 Create local repository directory and copy click-router into it:  
